@@ -1,0 +1,96 @@
+:root {
+    --primary-color: #3E2723;
+    --secondary-color: #4E342E;
+    --accent-color: #6D4C41;
+    --light-color: #D7CCC8;
+    --text-color: #212121;
+}
+body {
+    background-color: var(--light-color);
+    color: var(--text-color);
+    font-family: 'Raleway', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+}
+.navbar {
+    background-color: var(--primary-color);
+    transition: background-color 0.3s ease;
+}
+.navbar:hover {
+    background-color: var(--secondary-color);
+}
+.navbar-brand, .nav-link {
+    color: var(--light-color) !important;
+    transition: color 0.3s ease;
+}
+.nav-link:hover {
+    color: #BCAAA4 !important;
+    transform: translateY(-2px);
+}
+.hero {
+    background: linear-gradient(rgba(62, 39, 35, 0.8), rgba(62, 39, 35, 0.8)), url('../images/hbcoffee.jpg') no-repeat center center;
+    background-size: cover;
+    color: var(--light-color);
+    padding: 5rem 0;
+}
+.card {
+    transition: all 0.3s ease;
+    background-color: #EFEBE9;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.btn-primary {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: var(--light-color);
+    transition: all 0.3s ease;
+}
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    transform: scale(1.05);
+}
+footer {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+.list-group-item {
+    background-color: #EFEBE9;
+    transition: background-color 0.3s ease;
+}
+.list-group-item:hover {
+    background-color: #D7CCC8;
+}
+.list-group-item a {
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+.list-group-item a:hover {
+    color: var(--accent-color);
+}
+.social-icons a {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+.social-icons a:hover {
+    color: var(--accent-color) !important;
+    transform: scale(1.2);
+}
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.hero h1 {
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+.form-control {
+    transition: all 0.3s ease;
+}
+.form-control:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 0.2rem rgba(109, 76, 65, 0.25);
+}
